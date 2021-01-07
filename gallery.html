@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header><img id="logo" src="pictures/Logo.png" alt="Logo playAgain"></header>
+    <main>
+      <h1>Sauve aussi d'autres musiques !</h1>
+      <div class="gallery">
+        <div class="inGallery">
+          <h2>Sauve le Classique</h2>
+          <img
+            class="imageGallery"
+            alt="Apprendre Mozart"
+            src="https://images.pexels.com/photos/210854/pexels-photo-210854.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+          />
+          <p>
+            Prends la suite de Mozart <br />
+          </p>
+        </div>
+        <div class="inGallery">
+          <h2>Sauve la Pop</h2>
+          <img
+            class="imageGallery"
+            alt="Apprendre la POP avec Mickeal Jackson"
+            src="https://images.pexels.com/photos/761963/pexels-photo-761963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          />
+          <p>Prends la suite de Mickael Jackson</p>
+        </div>
+        <div class="inGallery">
+          <h2>Sauve le RAP bonhomme !</h2>
+          <img
+            class="imageGallery"
+            alt="Apprendre le RAP"
+            src="https://images.pexels.com/photos/1238980/pexels-photo-1238980.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          />
+          <p>Apres Booba envoie du lourd</p>
+        </div>
+      </div>
+    </main>
+    <nav class="navbar">
+      <ul id="navbar_list" class="nav_display_none">
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="tuto.html">Tutoriel</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="gallery.html">Gallerie</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="team.html">Equipe</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="about.html">À propos</a>
+        </li>
+      </ul>
+      <div class="nav_main">
+        <div class="navbar_element">
+          <a href="index.html"
+            ><img class="nav_svg" src="svg/house.svg" alt="house"
+          /></a>
+        </div>
+        <div class="navbar_element">
+          <a href="game.html"
+            ><img class="nav_svg" src="svg/gamepad.svg" alt="gamepad"
+          /></a>
+        </div>
+        <div
+          class="navbar_element"
+          id="navbar_element_help"
+          onclick="openCloseMenu()"
+        >
+          <img class="nav_svg" src="svg/help.svg" alt="help" />
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script src="navbar.js"></script>
+</html>

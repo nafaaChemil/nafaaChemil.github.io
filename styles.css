@@ -1,0 +1,438 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end of reset styles CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*css fond d'écran*/
+body{
+  background-image: url("pictures/fond.jpeg");
+  font-family: 'Indie Flower', cursive;
+}
+
+
+header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+main{
+    padding-bottom: 20vh;
+}
+/* style pour les titres*/
+h1 {
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    font-family: 'Indie Flower', cursive;
+    
+}
+h2 {
+  text-align: center;
+}
+h2, h3{
+    font-size: 25px;
+    color: black;
+    
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+h3 {
+  font-size: 20px;
+}
+
+/*style de paragraphe*/
+p {
+    font-size: 20px;
+    line-height: 1.4em;
+    font-weight: 100;
+    text-align: justify;
+    color:black;
+    text-shadow: 1px 1px 2px #E85D04;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+/*mise en page img page tuto*/
+.tutoGif{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    height: 50vw;
+    width: 80vw;
+    padding-bottom: 50px;
+}
+
+/*design du boutton start page tuto*/
+button {
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  display: block;
+  background: #ffe2ad;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;;
+  
+}
+button:hover{
+  cursor: pointer;
+}
+audio {
+  display: none;
+}
+a {
+  text-decoration:none;
+}
+/* styles for Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery img {
+  width: 100%;
+}
+.inGallery {
+  margin: 10px;
+}
+.imageGallery {
+  width: 100%;
+  height: auto;
+}
+
+img.home {
+  width: 100%;
+  margin-bottom: -70px;
+}
+
+/* Gallery for mobile */
+@media screen and (max-width:640px){
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width:100vw;
+    }  
+    .inGallery{
+        width:80vw;
+    }
+    .imageGallery{
+          height: auto;
+    } 
+}
+
+/* style pour page équipe */
+.prenom {
+  font-size: 32px;
+  letter-spacing: .1em;
+  font-family:'Indie Flower', cursive;
+  color: #f2f2f2;
+  margin: 2px;
+  text-align: right;
+  padding: 15px 14px;
+  font-weight: 100;
+  margin-top: -63px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section#container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Player {
+  border-radius: 20px;
+  /* box-shadow: 0 0 5px rgb(151, 151, 151); */
+  width: 416px;
+  margin-bottom: 15px;
+}
+
+/* Style images Ã©quipe */
+.potato {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  opacity: 100%;
+  position: relative;
+  z-index: 0;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+/* Style responsive Ã©quipe */
+@media only screen and (max-width: 640px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap');
+
+
+/* Ressources des images
+https://www.flaticon.com/packs/music-store-49?word=musical%20instrument
+*/
+
+#memorie_rock {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 400px;
+    margin: 5vh 0;
+    grid-gap: .25rem;
+    transition: grid-gap .4s ease-in-out;
+}
+
+div.case {
+    
+    padding: 1rem ;
+    background-color: rgb(231, 231, 231);
+    border-radius: 4px;
+    transition: border .3s ease-in-out;
+}
+
+.case:active {
+    border:1px solid #E85D04;
+    cursor: grab;
+}
+
+
+.case img {
+    width: 100%;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+
+.case:active img{
+    border-color: #E85D04;
+    cursor: grab;
+    opacity: 1;
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d65c0c;
+  padding:20px;
+}
+.nav_main {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar_element {
+  margin: 10px;
+}
+#navbar_element_help:hover {
+  cursor: pointer;
+}
+.nav_svg {
+  height: 80px;
+  background: #ffe2ad;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#login_div {
+  padding: 20px;
+}
+label{
+  font-size: 20px;
+  line-height: 1.4em;
+  font-weight: 100;
+  text-align: justify;
+  color:black;
+  font-family: 'Lato', sans-serif;
+}
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px black;
+}
+
+#navbar_list {
+  height: 270px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+}
+.navbar_list_element {
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+.navbar_list_link:link,
+.navbar_list_link:visited {
+  color: #f8cba1;
+  text-decoration:underline;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.383);
+}
+
+.nav_display_none {
+  height: 0 !important;
+}
+
+#logo {
+  display:flex;
+  justify-content:flex start;
+  width: 100px;
+  height:50px;
+  background-color: #fffcfa38;
+  border-radius: 20px;
+  
+}

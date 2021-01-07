@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="memory.css" />
+    <title>Jeux sauve le Rock</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="pictures/Logo.png" alt="Logo playAgain" />
+    </header>
+    <main class="game">
+      <h1>SAUVE LE ROCK!!!!</h1>
+      <h2>Mission 1 : Découvre les instruments du rock</h2>
+      <h3>Sois attentif en écoutant les sons qui vont suivre.</h3>
+      <h3 id="score">Score : 0</h3>
+      <h3 id="timer">Temps écoulé : 0 secondes</h3>
+      <div class="win">
+        <button id="play-again" onclick="reset()">Play Again</button>
+        </div>
+
+      <section class="memory-game">
+
+        <div class="memory-card" data-instru="guitar" >
+            <audio class = "sound" src="sound/guitar.mp3"></audio>
+            <img class='front-face' src="img/case_1-guitar.svg" alt="guitar" />
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+        </div>
+        <div class="memory-card"  data-instru="guitar">
+            <audio class = "sound" src="sound/guitar.mp3"></audio>
+            <img class='front-face' src="img/case_1-guitar.svg" alt="guitar"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+        </div>
+        <div class="memory-card"  data-instru="drum">
+            <audio class = "sound" src="sound/drum.mp3"></audio>
+            <img class='front-face' src="img/case_5-drum.svg" alt="drum"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+        </div>
+        <div class="memory-card" data-instru="drum">
+            <audio class = "sound" src="sound/drum.mp3"></audio>
+            <img class='front-face' src="img/case_5-drum.svg" alt="drum"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+        </div>
+        <div class="memory-card" data-instru="microphone">
+            <audio class = "sound" src="sound/voice.mp3"></audio>
+            <img class='front-face' src="img/case_3-microphone.svg" alt="microphone"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+        </div>
+        <div class="memory-card" data-instru="microphone">
+            <audio class = "sound" src="sound/voice.mp3"></audio>
+            <img class='front-face' src="img/case_3-microphone.svg" alt="microphone"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+        </div>
+        <div class="memory-card" data-instru="saxo">
+            <audio class = "sound" src="sound/saxo.mp3"></audio>
+            <img class='front-face' src="img/case_7-saxo.svg" alt="saxo"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+        </div>
+        <div class="memory-card" data-instru="saxo">
+            <audio class = "sound" src="sound/saxo.mp3"></audio>
+            <img class='front-face' src="img/case_7-saxo.svg" alt="saxo"/>
+            <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+        </div>
+
+        <div class="memory-card" data-instru="violon">
+          <audio class = "sound" src="sound/violon.mp3"></audio>
+          <img class='front-face' src="img/case_6-violon.svg" alt="violon"/>
+          <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+      </div>
+
+      <div class="memory-card" data-instru="violon">
+        <audio class = "sound" src="sound/violon.mp3"></audio>
+        <img class='front-face' src="img/case_6-violon.svg" alt="violon"/>
+        <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+    </div>
+
+
+
+    <div class="memory-card" data-instru="horn">
+      <audio class = "sound" src="sound/french_horn.mp3"></audio>
+      <img class='front-face' src="img/case_8-horn.svg" alt="horn"/>
+      <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+  </div>
+  
+  <div class="memory-card" data-instru="horn">
+    <audio class = "sound" src="sound/french_horn.mp3"></audio>
+    <img class='front-face' src="img/case_8-horn.svg" alt="horn"/>
+    <img class='back-face' src="pictures/backCard.png" alt="logo"/>
+</div>
+
+
+      </section>
+    </main>
+
+    <nav class="navbar">
+      <ul id="navbar_list" class="nav_display_none">
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="tuto.html">Tutoriel</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="gallery.html">Gallerie</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="team.html">Equipe</a>
+        </li>
+        <li class="navbar_list_element">
+          <a class="navbar_list_link" href="about.html">À propos</a>
+        </li>
+      </ul>
+      <div class="nav_main">
+        <div class="navbar_element">
+          <a href="index.html"
+            ><img class="nav_svg" src="svg/house.svg" alt="house"
+          /></a>
+        </div>
+        <div class="navbar_element">
+          <a href="game.html"
+            ><img class="nav_svg" src="svg/gamepad.svg" alt="gamepad"
+          /></a>
+        </div>
+        <div
+          class="navbar_element"
+          id="navbar_element_help"
+          onclick="openCloseMenu()"
+        >
+          <img class="nav_svg" src="svg/help.svg" alt="help" />
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script src="memory.js"></script>
+  <script src="navbar.js"></script>
+</html>
